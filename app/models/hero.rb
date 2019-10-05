@@ -1,12 +1,12 @@
 class Hero 
   
-  attr_accessor :name, :power, :bio
+  attr_accessor :name, :power, :biography
   @@all = []
   
   def initialize(args)
     @name = args[:name]
     @power = args[:power]
-    @bio = args[:bio]
+    @biography = args[:bio]
     @@all << self 
   end 
   
