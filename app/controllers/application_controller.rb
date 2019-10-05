@@ -15,3 +15,7 @@ class App < Sinatra::Base
 end 
 
 end
+params[:team][:heroes].each do |args|            
+  Hero.new(args)         
+  end          
+  @heroes = Hero.all
